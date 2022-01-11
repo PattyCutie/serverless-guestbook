@@ -1,7 +1,7 @@
 /**
  * Web application
  */
-const apiUrl = '';
+const apiUrl = 'https://0c24d4d7.eu-gb.apigw.appdomain.cloud/guestbook';
 const guestbook = {
   // retrieve the existing guestbook entries
   get() {
@@ -11,7 +11,7 @@ const guestbook = {
       dataType: 'json'
     });
   },
-  // add a single guestbood entry
+  // add a single guestbook entry
   add(name, email, comment) {
     console.log('Sending', name, email, comment)
     return $.ajax({
